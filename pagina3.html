@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Coordenador</title>
+    <link rel="stylesheet" href="pagina3.css">
+    <script src="pagina3.js" defer></script> <!-- Link to JS file -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <button class="back-button" onclick="window.location.href='pagina2.html'">
+                <img src="seta.png" alt="Voltar">
+            </button> 
+            <h1>Adicionar Coordenador(a)</h1>
+            <button type="button" class="submit-btn" id="salvar-btn">Salvar</button>
+        </header>
+        <p class="subheading">Dados Credenciais</p>
+        <form>
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="Digite a senha">
+            </div>
+            <div class="form-group">
+                <label for="confirmar-senha">Confirmar senha</label>
+                <input type="password" id="confirmar-senha" placeholder="Confirme a senha">
+            </div>
+        </form>
+    </div>
+
+    <!-- Modal for confirmation -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <h2>Tem certeza que os dados do cadastro estão corretos?</h2>
+            <p>Você pode voltar e verificar caso tenha algum erro ou editar os dados do professor(a) depois de criado.</p>
+            <button id="cancelar-btn" class="modal-btn">Não</button>
+            <button id="confirmar-btn" class="modal-btn">Sim</button>
+        </div>
+    </div>
+</body>
+</html>

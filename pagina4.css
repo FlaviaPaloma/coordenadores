@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 0px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 0;
+}
+
+.section {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-header h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.section-header p {
+    font-size: 14px;
+    color: #888;
+}
+
+.edit-icon {
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.edit-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Form inline styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group-inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group-inline .form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-group-inline .form-group:last-child {
+    margin-right: 0;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 30px;
+    }
+}

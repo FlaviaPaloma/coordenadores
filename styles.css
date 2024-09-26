@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    justify-content: flex-start;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 40px; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 40px; 
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin-right: 710px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+button img {
+    width: 24px;
+    height: 24px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 40px; 
+    border: 2px solid #e0e0e0;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.search-icon {
+    position: absolute;
+    left: 20px;
+    width: 24px;
+    height: 24px;
+    color: #7a4cf5;
+}
+
+.search-bar input:focus {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-color: #7a4cf5;
+}
+
+.card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.card .info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card .info h2 {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.card .info p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+button.edit-button, button.delete-button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+button img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Estilo do modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+}
+
+.modal-content h2 {
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    margin-bottom: 20px;
+}
+
+/* Alinha os botões horizontalmente */
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-buttons button {
+    width: 48%; /* Faz os botões ocuparem o mesmo espaço e alinhados */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo do botão "Não" */
+.modal-buttons button:first-child {
+    background-color: white;
+    color: rgb(79, 79, 79);
+    border: 2px solid rgb(85, 85, 85);
+}
+
+/* Hover no botão "Não" */
+.modal-buttons button:first-child:hover {
+    background-color: rgba(243, 234, 250, 1); /* Um leve roxo */
+}
+
+/* Estilo do botão "Sim" */
+.modal-buttons button:last-child {
+    background-color: rgba(255, 76, 76, 1);
+    color: white;
+}
+
+/* Hover no botão "Sim" */
+.modal-buttons button:last-child:hover {
+    background-color: #ff0000;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .card .info h2 {
+        font-size: 1em;
+    }
+
+    .card .info p {
+        font-size: 0.85em;
+    }
+
+    button img {
+        width: 20px;
+        height: 20px;
+    }
+}

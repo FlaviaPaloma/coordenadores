@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordenadores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button class="back-button">
+                <img src="seta.png" alt="Voltar">
+            </button>
+            <h1>Coordenadores</h1>
+            <button class="add-button">
+                <img src="mais.png" alt="Adicionar">
+            </button>
+        </header>
+        <div class="search-bar">
+            <img src="lupa.png" class="search-icon" alt="Pesquisar">
+            <input type="text" placeholder="">
+        </div>
+        <div class="card-list">
+            <div class="card">
+                <div class="info">
+                    <h2>Fulano Santana Da Silva</h2>
+                    <p>FulanoSilva@gmail.com</p>
+                    <p>00000-00</p>
+                    <p>(81) 98654-3851</p>
+                </div>
+                <div class="actions">
+                    <button class="edit-button">
+                        <img src="edit-icon.png" alt="Editar">
+                    </button>
+                    <button class="delete-button" onclick="confirmDelete()">
+                        <img src="delete-icon.png" alt="Excluir">
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="info">
+                    <h2>Fulano Santana Da Silva</h2>
+                    <p>FulanoSilva@gmail.com</p>
+                    <p>00000-00</p>
+                    <p>(81) 98654-3851</p>
+                </div>
+                <div class="actions">
+                    <button class="edit-button">
+                        <img src="edit-icon.png" alt="Editar">
+                    </button>
+                    <button class="delete-button" onclick="confirmDelete()">
+                        <img src="delete-icon.png" alt="Excluir">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="confirmModal" class="modal">
+        <div class="modal-content">
+            <h2>Tem certeza que deseja apagar este coordenador(a)?</h2>
+            <p>Todos os dados deste professor(a) serão apagados do sistema</p>
+            <div class="modal-buttons">
+                <button onclick="closeModal()">Não</button>
+                <button onclick="deleteItem()">Sim</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="pagina1.js"></script>
+</body>
+</html>
